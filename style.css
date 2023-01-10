@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: cursive;
+}
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#gameArea {
+    flex:1;
+    display: grid;
+    border: 30px solid red;
+    border-radius: 20px;
+    max-height: 80vh;
+    box-shadow: 0px 0px 5px black;
+}
+
+#settings, #instructions {
+    flex: 0 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#nav, #footer {
+    height: 10vh;
+}
+#footer {
+    margin: 1%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav h1 {
+    font-size: 3rem;
+}
