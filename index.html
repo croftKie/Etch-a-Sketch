@@ -12,17 +12,27 @@
     <div id="main">
         <div id="settings">
             <h2>Settings</h2>
-            <ul>
-                <li>Colour Picker</li>
-                <li>Draw Mode</li>
-                <li>Erase Mode</li>
-                <li>Clear Board</li>
-            </ul>
+            <input type="color" name="color" id="colorPicker">
+            <button id="drawMode">Draw Mode</button>
+            <button id="eraseMode">Erase Mode</button>
+            <button id="clear">Clear Board</button>
+            <div class="slideContainer">
+                <p>Opacity:</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="opacity">
+            </div>
+            <div class="slideContainer">
+                <p>Size:</p>
+                <input type="range" min="1" max="64" value="32" class="slider" id="myRange">
+            </div>
         </div>
         <div id="gameArea"></div>
         <div id="instructions">
             <h2>How to Play</h2>
-            <p>An Etch A Sketch has a thick, flat gray screen in a red plastic frame. There are two white knobs on the front of the frame in the lower corners. Twisting the knobs moves a stylus that displaces aluminum powder on the back of the screen, leaving a solid line. The knobs create lineographic images. The left control moves the stylus horizontally, and the right one moves it vertically.</p>
+            <p>Hover your cursor over the etch-a-sketch to start drawing. You're always drawing, so be careful creating your masterpiece.</p>
+            <p>Choose a new colour with the colour picker</p>
+            <p>Choose between draw mode to create new shapes and erase mode to remove them</p>
+            <p>Use the opacity slider to make your lines darker or lighter</p>
+            <p>User the size slider to make your etch-a-sketch more detailed, or less.</p>
         </div>
     </div>
     <footer id="footer">Made by Kieran Croft</footer>
