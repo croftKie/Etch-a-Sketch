@@ -68,6 +68,7 @@ eraseMode.addEventListener('click',() => {
     changeColour()
 });
 
+
 // function calls to run app
 gridSetUp(currentSize)
 resetGrid()

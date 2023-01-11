@@ -39,6 +39,10 @@ body {
     font-weight: bold;
 }
 
+#settings button:active {
+    background-color: darkred;
+}
+
 #nav, #footer {
     height: 10vh;
 }
